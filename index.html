@@ -1,0 +1,3123 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.C. Hassa Belediyesi - Resmi Web Sitesi</title>
+    <meta name="description" content="T.C. Hassa Belediyesi resmi web sitesi. Hatay Hassa ilçesi belediye hizmetleri, duyurular, e-belediye, iletişim ve projeler hakkında bilgi alın.">
+    <meta name="theme-color" content="#E30613">
+    <link rel="canonical" href="https://www.hassa.bel.tr/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="T.C. Hassa Belediyesi - Resmi Web Sitesi">
+    <meta property="og:description" content="Hatay Hassa Belediyesi resmi web sitesi. Duyurular, hizmetler, e-belediye ve iletişim.">
+    <meta property="og:url" content="https://www.hassa.bel.tr/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="T.C. Hassa Belediyesi - Resmi Web Sitesi">
+    <meta name="twitter:description" content="Hatay Hassa Belediyesi resmi web sitesi. Duyurular, hizmetler ve iletişim.">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23E30613' width='32' height='32' rx='4'/><text x='16' y='22' font-size='18' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>H</text></svg>">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style (inline - tek dosyada her cihazda yuklenir) -->
+    <style>
+/* 
+   Hassa Municipality - Main Styles 
+   Theme: Premium Corporate (2024-2026)
+*/
+
+:root {
+    /* Color Palette - Premium */
+    --color-primary: #E30613;
+    /* Turkish Red */
+    --color-primary-dark: #b8050f;
+    --color-primary-light: #ffebec;
+
+    --color-secondary: #0f172a;
+    /* Dark Navy for High Contrast */
+    --color-secondary-dark: #000000;
+
+    --color-accent: #d97706;
+    /* Golden Amber */
+
+    /* Text */
+    --color-text-main: #111827;
+    --color-text-light: #4b5563;
+
+    /* Backgrounds */
+    --color-bg-light: #f3f4f6;
+    --color-bg-white: #ffffff;
+    --color-bg-gradient: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+
+    /* Borders */
+    --color-border: #e2e8f0;
+
+    /* Typography */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Plus Jakarta Sans', var(--font-main);
+
+    /* Spacing & Layout */
+    --container-width: 1280px;
+    /* Wider for modern screens */
+    --header-height: 90px;
+    --border-radius: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+
+    /* Shadows - Soft & Deep */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --color-bg-glass: rgba(255,255,255,0.95);
+    --backdrop-blur: blur(10px);
+    --shadow-glass: 0 8px 32px rgba(0,0,0,0.08);
+    --shadow-hover: 0 12px 24px rgba(0,0,0,0.12);
+    --color-primary-soft: #ffebec;
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    background-color: var(--color-bg-white);
+}
+
+h1, h2, h3, h4, .section-header h2, .hero-content h2, .mayor-content h2 {
+    font-family: var(--font-heading);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 15px;
+    border: none;
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(227, 6, 19, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px -1px rgba(227, 6, 19, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.btn-outline {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--color-text-main);
+}
+
+.btn-white:hover {
+    background-color: #f3f4f6;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    color: var(--color-text-main);
+    position: relative;
+    padding-left: 18px;
+    font-weight: 700;
+}
+
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+.view-all {
+    color: var(--color-primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f8fafb;
+    border-bottom: 1px solid var(--color-border);
+    padding: 10px 0;
+    font-size: 13px;
+    color: var(--color-text-light);
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links a {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.weather-widget {
+    font-size: 13px;
+    color: var(--color-text-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.weather-widget i {
+    color: var(--color-accent);
+}
+
+.social-media a {
+    margin-left: 15px;
+    color: var(--color-text-light);
+}
+
+.social-media a:hover {
+    color: var(--color-primary);
+}
+
+/* Header */
+.main-header {
+    background: var(--color-bg-glass);
+    height: var(--header-height);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    border-left: 1px solid var(--color-border);
+}
+
+.logo-text span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--color-secondary);
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+
+/* Navigation */
+.desktop-menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.desktop-menu a {
+    font-weight: 500;
+    color: var(--color-text-main);
+    font-size: 15px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.desktop-menu a:hover,
+.desktop-menu a.active {
+    color: var(--color-primary);
+}
+
+.desktop-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s;
+}
+
+.desktop-menu a:hover::after,
+.desktop-menu a.active::after {
+    width: 100%;
+}
+
+/* Kurumsal dropdown */
+.desktop-menu .has-dropdown {
+    position: relative;
+}
+.desktop-menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: var(--color-bg-white);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius);
+    padding: 8px 0;
+    margin-top: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+    z-index: 100;
+    list-style: none;
+    border: 1px solid var(--color-border);
+}
+.desktop-menu .has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.desktop-menu .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--color-text-main);
+}
+.desktop-menu .dropdown-menu a::after {
+    display: none;
+}
+.desktop-menu .dropdown-menu a:hover {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color-text-main);
+}
+
+/* Hero Section - Slider */
+.hero-section {
+    position: relative;
+    height: min(100vh, 680px);
+    min-height: 520px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #0f172a;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.hero-slide:nth-child(1) { background-image: url('assets/img/hero-bg.jpg'); }
+.hero-slide:nth-child(2) { background-image: url('assets/img/hero-2.jpg'); background-color: #1e3a5f; }
+.hero-slide:nth-child(3) { background-image: url('assets/img/hero-3.jpg'); background-color: #0f172a; }
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(227, 6, 19, 0.25) 50%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content .badge {
+    background-color: var(--color-primary);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 14px rgba(227, 6, 19, 0.35);
+}
+
+.hero-content h2 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Hero Slider Arrows & Dots */
+.hero-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: var(--container-width);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.hero-arrows button {
+    pointer-events: auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-arrows button:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.hero-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.hero-dots button:hover,
+.hero-dots button.active {
+    background: white;
+    transform: scale(1.15);
+}
+.quick-access {
+    margin-top: -80px;
+    /* Deeper overlap */
+    position: relative;
+    z-index: 20;
+    margin-bottom: 80px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.access-card {
+    background: var(--color-bg-white);
+    padding: 32px 24px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-glass);
+    text-align: left;
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.access-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-primary);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.access-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.access-card:hover::before {
+    opacity: 1;
+}
+
+.access-card .icon {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    background: var(--color-primary-soft);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    /* Soft square */
+    transition: all 0.3s ease;
+}
+
+.access-card:hover .icon {
+    background: var(--color-primary);
+    color: white;
+    transform: scale(1.1) rotate(3deg);
+    border-radius: 50%;
+}
+
+.access-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--color-text-main);
+}
+
+.access-card p {
+    font-size: 13px;
+    color: var(--color-text-light);
+}
+
+/* Section intro & Kurumsal */
+.section-intro {
+    max-width: 720px;
+    margin-bottom: 32px;
+    color: var(--color-text-light);
+    font-size: 16px;
+}
+
+.hakkinda-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hakkinda-content p {
+    margin-bottom: 16px;
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.hakkinda-stats {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.hakkinda-stats li {
+    margin-bottom: 8px;
+    color: var(--color-text-main);
+}
+
+.hakkinda-map-placeholder {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #1e293b 100%);
+    border-radius: var(--border-radius-lg);
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    gap: 12px;
+}
+
+.hakkinda-map-placeholder i {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .hakkinda-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.kurumsal-blok {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--color-border);
+}
+.kurumsal-blok:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.kurumsal-blok h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+}
+.duyuru-list {
+    list-style: none;
+    padding: 0;
+}
+.duyuru-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-main);
+}
+.duyuru-list li:last-child {
+    border-bottom: none;
+}
+
+.duyuru-list-rich {
+    list-style: none;
+    padding: 0;
+}
+
+.duyuru-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.duyuru-item:last-child {
+    border-bottom: none;
+}
+
+.duyuru-date {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--color-text-main);
+    min-width: 100px;
+}
+
+.duyuru-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+
+.duyuru-badge-genel {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.duyuru-badge-etkinlik {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.duyuru-badge-imar {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.duyuru-text {
+    flex: 1;
+    color: var(--color-text-main);
+}
+
+/* Tabs (Duyurular / İhale) */
+.tabs-head {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-light);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--color-text-main);
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.ihale-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    background: white;
+}
+
+.ihale-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.ihale-table th,
+.ihale-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ihale-table th {
+    background: var(--color-bg-light);
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.ihale-table tbody tr:hover {
+    background: var(--color-primary-light);
+}
+
+.badge-open {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.badge-closed {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+/* News Section */
+.section-gray {
+    background-color: var(--color-bg-light);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s, transform 0.3s;
+    border: 1px solid var(--color-border);
+}
+
+.news-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.news-img {
+    height: 220px;
+    position: relative;
+    background-color: #e5e7eb;
+    overflow: hidden;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-img img {
+    transform: scale(1.06);
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.news-img .date {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text-main);
+    box-shadow: var(--shadow-sm);
+}
+
+.news-content {
+    padding: 26px 24px;
+}
+
+.news-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: var(--color-text-main);
+}
+
+.news-content p {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    transition: color 0.2s, gap 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.read-more:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Mayor Section */
+.mayor-section {
+    background: linear-gradient(to bottom, #fff, #f8fafb);
+}
+
+.mayor-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Changed to equal split for dual images */
+    gap: 40px;
+    align-items: center;
+}
+
+.mayor-images-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-portrait {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: white;
+    width: 250px;
+    /* Fixed width for better alignment */
+    transition: transform 0.3s;
+}
+
+.card-portrait:hover {
+    transform: translateY(-5px);
+}
+
+.card-portrait img {
+    width: 100%;
+    height: 320px;
+    /* Fixed height for uniformity */
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-caption {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    background: white;
+    border-top: 1px solid #eee;
+}
+
+.mayor-content .subtitle {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mayor-content h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.mayor-content p {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 30px;
+    font-style: italic;
+    border-left: 4px solid var(--color-border);
+    padding-left: 20px;
+}
+
+.signatures {
+    display: flex;
+    gap: 15px;
+}
+
+/* Footer */
+.main-footer {
+    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+    color: #d1d5db;
+    padding-top: 80px;
+    position: relative;
+}
+
+.main-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.footer-col p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    max-width: 280px;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #9ca3af;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    background-color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: background 0.2s;
+}
+
+.footer-social a:hover {
+    background-color: var(--color-primary);
+}
+
+.contact-info li {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.contact-info li a {
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.contact-info li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+.footer-bottom .footer-legal {
+    margin-top: 10px;
+    font-size: 13px;
+}
+.footer-bottom .footer-legal a {
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+.footer-bottom .footer-legal a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mayor-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .mayor-images-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signatures {
+        justify-content: center;
+    }
+
+    .mayor-content p {
+        border: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .desktop-menu,
+    .btn-outline {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Sidebar (Hidden by default) */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    z-index: 2000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.mobile-sidebar.active {
+    right: 0;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mobile-menu-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 15px;
+}
+
+.mobile-links li {
+    margin-bottom: 15px;
+}
+
+.mobile-links a {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 0;
+}
+
+.mobile-accordion {
+    list-style: none;
+}
+
+.mobile-accordion-toggle {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-accordion-toggle i {
+    transition: transform 0.2s;
+}
+
+.mobile-accordion.open .mobile-accordion-toggle i {
+    transform: rotate(180deg);
+}
+
+.mobile-sublinks {
+    list-style: none;
+    padding: 0 0 0 16px;
+    margin: 0 0 8px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-accordion.open .mobile-sublinks {
+    max-height: 280px;
+}
+
+.mobile-sublinks a {
+    font-size: 14px;
+    padding: 8px 0;
+    color: var(--color-text-light);
+}
+
+.sidebar-ebelediye-btn {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar-social {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    gap: 12px;
+}
+
+.sidebar-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--color-bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-main);
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-social a:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+#closeSidebar {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Statistics Section */
+.stats-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.stats-section-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+    font-family: var(--font-heading);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--color-border);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-img {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img .img-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-content {
+    padding: 24px;
+}
+
+.project-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-text-main);
+}
+
+.project-content p {
+    font-size: 14px;
+    color: var(--color-text-light);
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: var(--color-bg-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item .gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    font-size: 2rem;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.lightbox-prev { left: -70px; }
+.lightbox-next { right: -70px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .lightbox-prev { left: 10px; }
+    .lightbox-next { right: 10px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Map Section */
+.map-section {
+    padding: 80px 0;
+    background: var(--color-bg-light);
+}
+
+.contact-form-map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+@media (max-width: 968px) {
+    .contact-form-map-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-form {
+    background: white;
+    padding: 32px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+}
+
+.contact-form h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: var(--color-text-main);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-main);
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-main);
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-group .required::after {
+    content: ' *';
+    color: var(--color-primary);
+}
+
+.form-feedback {
+    padding: 12px;
+    border-radius: var(--border-radius);
+    margin-bottom: 16px;
+    display: none;
+}
+
+.form-feedback.success {
+    display: block;
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.form-feedback.error {
+    display: block;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.map-wrapper {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8);
+    }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.back-to-top.show {
+    display: flex;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    background: var(--color-primary-dark);
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays for cards */
+.quick-access .access-card.fade-in { transition-delay: 0s; }
+.quick-access .access-card.fade-in:nth-child(1) { transition-delay: 0s; }
+.quick-access .access-card.fade-in:nth-child(2) { transition-delay: 0.08s; }
+.quick-access .access-card.fade-in:nth-child(3) { transition-delay: 0.16s; }
+.quick-access .access-card.fade-in:nth-child(4) { transition-delay: 0.24s; }
+
+.stats-grid .stat-card.fade-in { transition-delay: 0s; }
+.stats-grid .stat-card.fade-in:nth-child(1) { transition-delay: 0s; }
+.stats-grid .stat-card.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.stats-grid .stat-card.fade-in:nth-child(3) { transition-delay: 0.2s; }
+.stats-grid .stat-card.fade-in:nth-child(4) { transition-delay: 0.3s; }
+
+.projects-grid .project-card.fade-in:nth-child(1) { transition-delay: 0s; }
+.projects-grid .project-card.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.projects-grid .project-card.fade-in:nth-child(3) { transition-delay: 0.2s; }
+
+.news-grid .news-card.fade-in:nth-child(1) { transition-delay: 0s; }
+.news-grid .news-card.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.news-grid .news-card.fade-in:nth-child(3) { transition-delay: 0.2s; }
+
+/* Responsive Updates */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        bottom: 80px;
+        right: 20px;
+    }
+}
+
+/* Yasal / KVKK Section */
+.yasal-section {
+    background: var(--color-bg-light);
+    padding: 64px 0;
+}
+
+.yasal-section .section-header {
+    margin-bottom: 32px;
+}
+
+.yasal-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: var(--color-text-main);
+}
+
+.yasal-section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.yasal-section p {
+    color: var(--color-text-light);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.yasal-section > .container {
+    max-width: 800px;
+}
+
+.yasal-blok {
+    margin-bottom: 36px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.yasal-blok:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Skip link - erişilebilirlik */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    background: var(--color-primary);
+    color: white;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    z-index: 9999;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 16px;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: var(--color-bg-white);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.preloader-inner {
+    text-align: center;
+}
+
+.preloader-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+    animation: preloaderPulse 1.2s ease-in-out infinite;
+}
+
+.preloader-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    animation: preloaderSpin 0.8s linear infinite;
+}
+
+.preloader-text {
+    font-size: 13px;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+@keyframes preloaderSpin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes preloaderPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+/* Cookie Consent Banner */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-secondary);
+    color: #e5e7eb;
+    padding: 16px 24px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    z-index: 9998;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-consent.show {
+    display: flex;
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 1;
+    min-width: 260px;
+}
+
+.cookie-consent a {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
+.cookie-consent a:hover {
+    color: white;
+}
+
+.cookie-consent .btn {
+    flex-shrink: 0;
+}
+
+.cookie-consent .cookie-consent-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media print {
+    .preloader,
+    .top-bar,
+    .main-header,
+    .mobile-menu-btn,
+    .mobile-sidebar,
+    .mobile-menu-overlay,
+    .hero-arrows,
+    .hero-dots,
+    .whatsapp-float,
+    .back-to-top,
+    .cookie-consent,
+    .lightbox,
+    .btn {
+        display: none !important;
+    }
+    body {
+        background: white;
+        color: #111;
+    }
+    a[href]::after {
+        content: ' (' attr(href) ')';
+        font-size: 0.85em;
+        color: #666;
+    }
+    .section {
+        padding: 24px 0;
+        break-inside: avoid;
+    }
+    .hero-section {
+        height: auto;
+        min-height: 200px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "name": "T.C. Hassa Belediyesi",
+  "url": "https://www.hassa.bel.tr/",
+  "logo": "https://www.hassa.bel.tr/assets/img/logo.png",
+  "description": "Hatay ili Hassa ilçesi belediyesi resmi web sitesi.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Derviş Paşa Mah. Atatürk Cad.",
+    "addressLocality": "Hassa",
+    "addressRegion": "Hatay",
+    "addressCountry": "TR"
+  },
+  "telephone": "+90-326-771-63-66",
+  "email": "bilgi@hassa.bel.tr",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.799,
+    "longitude": 36.515
+  }
+}
+</script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <img src="assets/img/logo.png" alt="" class="preloader-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="preloader-logo" style="display:none; width:80px; height:80px; margin:0 auto 20px; background:var(--color-primary); border-radius:12px;"></div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Yükleniyor...</p>
+        </div>
+    </div>
+
+    <!-- Erişilebilirlik: Klavye ile "Skip to main" -->
+    <a href="#anasayfa" class="skip-link">İçeriğe Atla</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#anasayfa">Hassa / Hatay</a>
+                <a href="tel:03267716366"><i class="fa-solid fa-phone"></i> 0326 771 63 66</a>
+                <span class="weather-widget" id="weatherWidget" aria-live="polite"></span>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@hassabelediyesi" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#anasayfa" class="logo">
+                <img src="assets/img/logo.png" alt="Hassa Belediyesi Logosu" class="logo-img">
+                <div class="logo-text">
+                    <span>T.C.</span>
+                    <h1>HASSA BELEDİYESİ</h1>
+                </div>
+            </a>
+
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#anasayfa" class="active">Anasayfa</a></li>
+                    <li class="has-dropdown">
+                        <a href="#kurumsal">Kurumsal <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#baskan">Başkan</a></li>
+                            <li><a href="#meclis">Meclis Üyeleri</a></li>
+                            <li><a href="#mudurlukler">Müdürlükler</a></li>
+                            <li><a href="#stratejik-plan">Stratejik Plan</a></li>
+                            <li><a href="#faaliyet-raporlari">Faaliyet Raporları</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#hizmetler">Hizmetler</a></li>
+                    <li><a href="#haberler">Haberler</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#ebelediye" class="btn btn-outline">E-Belediye</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <h3>Hassa Belediyesi</h3>
+            <button id="closeSidebar" aria-label="Menüyü kapat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li class="mobile-accordion">
+                <button type="button" class="mobile-accordion-toggle" aria-expanded="false" aria-controls="mobileKurumsal" id="toggleKurumsal">
+                    Kurumsal <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-sublinks" id="mobileKurumsal" role="region" aria-labelledby="toggleKurumsal">
+                    <li><a href="#baskan">Başkan</a></li>
+                    <li><a href="#meclis">Meclis Üyeleri</a></li>
+                    <li><a href="#mudurlukler">Müdürlükler</a></li>
+                    <li><a href="#stratejik-plan">Stratejik Plan</a></li>
+                    <li><a href="#faaliyet-raporlari">Faaliyet Raporları</a></li>
+                </ul>
+            </li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#haberler">Haberler</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <a href="#ebelediye" class="btn btn-primary sidebar-ebelediye-btn">E-Belediye</a>
+        <div class="sidebar-social">
+            <a href="https://www.facebook.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/905327716366" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <span class="badge">Hoşgeldiniz</span>
+                    <h2>Gelişen, Değişen ve<br>Güzelleşen Hassa</h2>
+                    <p>Vatandaş odaklı hizmet anlayışımız ile Hassa için çalışıyoruz.</p>
+                    <div class="hero-buttons">
+                        <a href="#baskan" class="btn btn-primary">Başkanın Mesajı</a>
+                        <a href="#projeler" class="btn btn-white">Projelere Göz At</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <span class="badge">Projelerimiz</span>
+                    <h2>Vatandaşlarımıza<br>Hizmet</h2>
+                    <p>Park, yol, altyapı ve kültür projeleriyle ilçemizi güzelleştiriyoruz.</p>
+                    <div class="hero-buttons">
+                        <a href="#projeler" class="btn btn-primary">Projeleri İncele</a>
+                        <a href="#haberler" class="btn btn-white">Haberler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <span class="badge">E-Belediye</span>
+                    <h2>Kolay İşlemler<br>Dijital Hizmet</h2>
+                    <p>Borç sorgulama, beyan ve ödeme işlemlerinizi online yapın.</p>
+                    <div class="hero-buttons">
+                        <a href="#ebelediye" class="btn btn-primary">E-Belediye'ye Git</a>
+                        <a href="#iletisim" class="btn btn-white">İletişim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-arrows" aria-label="Slider navigasyonu">
+            <button type="button" id="heroPrev" title="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" id="heroNext" title="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="hero-dots" role="tablist" aria-label="Slayt noktaları">
+            <button type="button" role="tab" aria-selected="true" data-slide="0" class="active" title="Slayt 1"></button>
+            <button type="button" role="tab" aria-selected="false" data-slide="1" title="Slayt 2"></button>
+            <button type="button" role="tab" aria-selected="false" data-slide="2" title="Slayt 3"></button>
+        </div>
+    </section>
+
+    <!-- Quick Access (Hızlı Erişim) -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="cards-grid">
+                <a href="#ebelediye" class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h3>E-Belediye</h3>
+                    <p>Borç sorgulama ve ödeme işlemleri</p>
+                </a>
+                <a href="#duyurular" class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Duyurular</h3>
+                    <p>Belediyemizden güncel ilanlar</p>
+                </a>
+                <a href="#ulasim" class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-bus"></i></div>
+                    <h3>Ulaşım</h3>
+                    <p>Otobüs seferleri ve saatleri</p>
+                </a>
+                <a href="#cozum-masasi" class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>Çözüm Masası</h3>
+                    <p>İstek, şikayet ve önerileriniz</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hassa Hakkında / Tarihçe -->
+    <section id="hakkinda" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hassa Hakkında</h2>
+            </div>
+            <div class="hakkinda-grid">
+                <div class="hakkinda-content">
+                    <p class="section-intro">Hatay'ın güneyinde, Amanos Dağları'nın eteğinde yer alan Hassa ilçesi, zengin tarihi ve doğal güzellikleriyle öne çıkan bir yerleşimdir.</p>
+                    <p>İlçe, tarih boyunca birçok medeniyete ev sahipliği yapmış olup, günümüzde tarım ve hayvancılıkla birlikte gelişen ekonomisiyle bölgenin önemli merkezlerinden biridir. Belediyemiz, ilçemizin refahı ve vatandaşlarımızın hizmeti için çalışmaktadır.</p>
+                    <ul class="hakkinda-stats">
+                        <li><strong>Nüfus:</strong> ~25.000</li>
+                        <li><strong>Yüzölçümü:</strong> 520 km²</li>
+                        <li><strong>Rakım:</strong> 450 m</li>
+                    </ul>
+                </div>
+                <div class="hakkinda-visual">
+                    <div class="hakkinda-map-placeholder">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>Hassa / Hatay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurumsal -->
+    <section id="kurumsal" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kurumsal</h2>
+            </div>
+            <p class="section-intro">Hassa Belediyesi olarak şeffaf, hesap verebilir ve vatandaş odaklı bir yönetim anlayışıyla hizmet vermekteyiz.</p>
+            <div class="kurumsal-blok">
+                <h3 id="meclis">Meclis Üyeleri</h3>
+                <p>Belediye meclisimiz, ilçemizin karar organı olarak çalışmalarını sürdürmektedir. Meclis toplantıları ve kararları hakkında bilgi alabilirsiniz.</p>
+            </div>
+            <div class="kurumsal-blok">
+                <h3 id="mudurlukler">Müdürlükler</h3>
+                <p>İmar, Fen İşleri, Temizlik, Zabıta, İnsan Kaynakları ve diğer müdürlüklerimiz ile hizmetlerimizi yürütmekteyiz.</p>
+            </div>
+            <div class="kurumsal-blok">
+                <h3 id="stratejik-plan">Stratejik Plan</h3>
+                <p>Belediyemizin stratejik planı, hedeflerimizi ve önceliklerimizi vatandaşlarımızla paylaşmaktadır.</p>
+            </div>
+            <div class="kurumsal-blok">
+                <h3 id="faaliyet-raporlari">Faaliyet Raporları</h3>
+                <p>Yıllık faaliyet raporlarımızla çalışmalarımızı kamuoyu ile paylaşıyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <section id="hizmetler" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hizmetlerimiz</h2>
+            </div>
+            <p class="section-intro">İlçemize yönelik belediyemizin sunduğu başlıca hizmetler.</p>
+            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-road"></i></div>
+                    <h3>Yol ve Altyapı</h3>
+                    <p>Yol yapımı, bakımı ve altyapı hizmetleri</p>
+                </div>
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Park ve Yeşil Alan</h3>
+                    <p>Park düzenlemesi ve yeşil alan bakımı</p>
+                </div>
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                    <h3>Çöp Toplama</h3>
+                    <p>Atık toplama ve çevre temizliği</p>
+                </div>
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Ruhsat ve İzin</h3>
+                    <p>İmar, ruhsat ve diğer belge işlemleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="haberler" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Haberler & Etkinlikler</h2>
+                <a href="#haberler" class="view-all">Tümünü Gör <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="news-grid">
+                <!-- News Item 1 -->
+                <article class="news-card">
+                    <div class="news-img">
+                        <img src="assets/img/haber1.jpg" alt="Hassa'da yeni park açılışı" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: none;"></div>
+                        <span class="date">07 Oca 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Yeni Park Projemiz Tamamlandı</h3>
+                        <p>İlçemize kazandırdığımız yeni yeşil alan projesi vatandaşlarımızın hizmetine açıldı.</p>
+                        <a href="#haberler" class="read-more">Devamını Oku</a>
+                    </div>
+                </article>
+
+                <!-- News Item 2 -->
+                <article class="news-card">
+                    <div class="news-img">
+                        <img src="assets/img/haber2.jpg" alt="Hassa Kültür Merkezi seminer etkinliği" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); display: none;"></div>
+                        <span class="date">05 Oca 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Kültür Merkezinde Seminer</h3>
+                        <p>Hafta sonu düzenlenecek olan eğitim seminerine tüm halkımız davetlidir.</p>
+                        <a href="#haberler" class="read-more">Devamını Oku</a>
+                    </div>
+                </article>
+
+                <!-- News Item 3 -->
+                <article class="news-card">
+                    <div class="news-img">
+                        <img src="assets/img/haber3.jpg" alt="Belediye Başkanı yeni yıl mesajı" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: none;"></div>
+                        <span class="date">01 Oca 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Yeni Yıl Mesajı</h3>
+                        <p>Belediye Başkanımızın yeni yıl kutlama mesajı.</p>
+                        <a href="#haberler" class="read-more">Devamını Oku</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <h2 class="stats-section-title">Rakamlarla Hassa</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number" data-target="25000">0</div>
+                    <div class="stat-label">Nüfus</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Tamamlanan Proje</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-tree"></i></div>
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Dikilen Ağaç</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Memnuniyet Oranı (%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projeler" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projelerimiz</h2>
+                <a href="#projeler" class="view-all">Tümünü Gör <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #E30613 0%, #b8050f 100%);"></div>
+                        <div class="project-overlay">
+                            <a href="#projeler" class="btn btn-white"><i class="fa-solid fa-eye"></i> Detay</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Park ve Yeşil Alan Projesi</h3>
+                        <p>İlçemize modern park ve rekreasyon alanları kazandırıldı.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);"></div>
+                        <div class="project-overlay">
+                            <a href="#projeler" class="btn btn-white"><i class="fa-solid fa-eye"></i> Detay</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Yol ve Altyapı İyileştirmeleri</h3>
+                        <p>Şehir içi yollar ve altyapı sistemleri modernize edildi.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);"></div>
+                        <div class="project-overlay">
+                            <a href="#projeler" class="btn btn-white"><i class="fa-solid fa-eye"></i> Detay</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kültür Merkezi</h3>
+                        <p>Modern kültür ve sanat merkezi hizmete açıldı.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Foto Galeri</h2>
+                <a href="#galeri" class="view-all">Tümünü Gör <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0" data-src="assets/img/galeri1.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 1">
+                    <img src="assets/img/galeri1.jpg" alt="Hassa Belediyesi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #E30613 0%, #b8050f 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+                <div class="gallery-item" data-index="1" data-src="assets/img/galeri2.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 2">
+                    <img src="assets/img/galeri2.jpg" alt="Hassa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+                <div class="gallery-item" data-index="2" data-src="assets/img/galeri3.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 3">
+                    <img src="assets/img/galeri3.jpg" alt="Hassa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #059669 0%, #047857 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+                <div class="gallery-item" data-index="3" data-src="assets/img/galeri4.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 4">
+                    <img src="assets/img/galeri4.jpg" alt="Hassa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #d97706 0%, #b45309 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+                <div class="gallery-item" data-index="4" data-src="assets/img/galeri5.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 5">
+                    <img src="assets/img/galeri5.jpg" alt="Hassa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+                <div class="gallery-item" data-index="5" data-src="assets/img/galeri6.jpg" tabindex="0" role="button" aria-label="Galeri fotoğrafı 6">
+                    <img src="assets/img/galeri6.jpg" alt="Hassa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder" style="display:none; background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);"><i class="fa-solid fa-image"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Belediye -->
+    <section id="ebelediye" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>E-Belediye</h2>
+            </div>
+            <p class="section-intro">Borç sorgulama, ödeme ve diğer işlemlerinizi çevrimiçi olarak yapabilirsiniz.</p>
+            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                <a href="tel:03267716366" class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-money-bill"></i></div>
+                    <h3>Borç Sorgulama</h3>
+                    <p>Su, vergi ve diğer belediye borçlarınızı öğrenin</p>
+                </a>
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h3>Beyan İşlemleri</h3>
+                    <p>Beyan ve bildirim işlemleri</p>
+                </div>
+                <div class="card access-card">
+                    <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>İmar Durumu</h3>
+                    <p>İmar durumu sorgulama</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Duyurular -->
+    <section id="duyurular" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Duyurular & İhaleler</h2>
+            </div>
+            <p class="section-intro">Belediyemizden güncel ilan, duyurular ve ihaleler.</p>
+            <div class="tabs">
+                <div class="tabs-head" role="tablist">
+                    <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="duyurular">Duyurular</button>
+                    <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="ihale">İhale İlanları</button>
+                </div>
+                <div class="tab-pane active" id="pane-duyurular" role="tabpanel">
+                    <ul class="duyuru-list duyuru-list-rich">
+                        <li class="duyuru-item">
+                            <span class="duyuru-date">07 Oca 2026</span>
+                            <span class="duyuru-badge duyuru-badge-genel">Genel</span>
+                            <span class="duyuru-text">Yeni park projemiz hizmete açıldı.</span>
+                        </li>
+                        <li class="duyuru-item">
+                            <span class="duyuru-date">05 Oca 2026</span>
+                            <span class="duyuru-badge duyuru-badge-etkinlik">Etkinlik</span>
+                            <span class="duyuru-text">Kültür Merkezi semineri hafta sonu düzenlenecektir.</span>
+                        </li>
+                        <li class="duyuru-item">
+                            <span class="duyuru-date">01 Oca 2026</span>
+                            <span class="duyuru-badge duyuru-badge-genel">Genel</span>
+                            <span class="duyuru-text">Yeni yıl mesajı yayımlandı.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="pane-ihale" role="tabpanel" hidden>
+                    <div class="ihale-table-wrapper">
+                        <table class="ihale-table">
+                            <thead>
+                                <tr>
+                                    <th>Tarih</th>
+                                    <th>İhale Adı</th>
+                                    <th>Tür</th>
+                                    <th>Durum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10 Oca 2026</td>
+                                    <td>Park düzenlemesi hizmet alımı</td>
+                                    <td>Hizmet Alımı</td>
+                                    <td><span class="badge badge-open">Açık</span></td>
+                                </tr>
+                                <tr>
+                                    <td>28 Ara 2025</td>
+                                    <td>Yol yapım malzemesi temini</td>
+                                    <td>Mal Alımı</td>
+                                    <td><span class="badge badge-closed">Kapalı</span></td>
+                                </tr>
+                                <tr>
+                                    <td>15 Ara 2025</td>
+                                    <td>İtfaiye aracı alımı</td>
+                                    <td>Mal Alımı</td>
+                                    <td><span class="badge badge-closed">Kapalı</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ulaşım -->
+    <section id="ulasim" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ulaşım</h2>
+            </div>
+            <p class="section-intro">Hassa ilçe içi ve Hatay merkeze ulaşım bilgileri.</p>
+            <p>Otobüs seferleri ve saatleri hakkında güncel bilgi için belediyemizi arayabilirsiniz: <a href="tel:03267716366">0326 771 63 66</a>.</p>
+        </div>
+    </section>
+
+    <!-- Çözüm Masası -->
+    <section id="cozum-masasi" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Çözüm Masası</h2>
+            </div>
+            <p class="section-intro">İstek, şikayet ve önerilerinizi aşağıdaki form ile iletebilirsiniz. Telefon: <a href="tel:03267716366">0326 771 63 66</a> · E-posta: <a href="mailto:bilgi@hassa.bel.tr">bilgi@hassa.bel.tr</a></p>
+            <div class="contact-form" style="max-width: 640px;">
+                <form id="cozumForm">
+                    <div id="cozumFormFeedback" class="form-feedback" role="alert"></div>
+                    <div class="form-group">
+                        <label for="cozumTc">TC Kimlik No</label>
+                        <input type="text" id="cozumTc" name="tc" placeholder="İsteğe bağlı" pattern="[0-9]{11}" maxlength="11">
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumName" class="required">Ad Soyad</label>
+                        <input type="text" id="cozumName" name="name" required placeholder="Adınız ve soyadınız">
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumPhone" class="required">Telefon</label>
+                        <input type="tel" id="cozumPhone" name="phone" required placeholder="05XX XXX XX XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumAddress">Adres / Mahalle</label>
+                        <input type="text" id="cozumAddress" name="address" placeholder="Mahalle veya adres">
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumCategory" class="required">Kategori</label>
+                        <select id="cozumCategory" name="category" required>
+                            <option value="">Seçiniz</option>
+                            <option value="altyapi">Altyapı</option>
+                            <option value="temizlik">Temizlik</option>
+                            <option value="park-bahce">Park ve Yeşil Alan</option>
+                            <option value="zabita">Zabıta</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumAciklama" class="required">Açıklama</label>
+                        <textarea id="cozumAciklama" name="aciklama" required placeholder="İsteğinizi, şikayetinizi veya önerinizi detaylı yazınız..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cozumFile">Dosya Eki (Fotoğraf vb.)</label>
+                        <input type="file" id="cozumFile" name="file" accept="image/*,.pdf">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nöbetçi Eczaneler -->
+    <section id="nobetci-eczaneler" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nöbetçi Eczaneler</h2>
+            </div>
+            <p class="section-intro">Güncel nöbetçi eczane listesi için 114 numaralı hattı arayabilir veya sağlık müdürlüğü sayfalarından öğrenebilirsiniz.</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="iletisim" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>İletişim</h2>
+                <a href="https://maps.app.goo.gl/DgejYNT55e7nwsjk8" target="_blank" rel="noopener noreferrer" class="view-all">Haritada Aç <i class="fa-solid fa-external-link"></i></a>
+            </div>
+            <div class="contact-form-map-grid">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="mailto:bilgi@hassa.bel.tr" method="get">
+                        <div id="contactFormFeedback" class="form-feedback" role="alert"></div>
+                        <h3>Bize Ulaşın</h3>
+                        <div class="form-group">
+                            <label for="contactName" class="required">Ad Soyad</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Adınız ve soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="required">E-posta</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="ornek@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Telefon</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="05XX XXX XX XX">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="required">Konu</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Seçiniz</option>
+                                <option value="sikayet">Şikayet</option>
+                                <option value="oneri">Öneri</option>
+                                <option value="bilgi">Bilgi Talebi</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="required">Mesajınız</label>
+                            <textarea id="contactMessage" name="message" required placeholder="Mesajınızı yazınız..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+                <div>
+                    <h3 style="font-size:1.1rem; margin-bottom:12px; color:var(--color-text-main);">Konumumuz</h3>
+                    <div class="map-wrapper">
+                <!-- Gerçek konum için: Google Maps'te Hassa Belediyesi'ni bulup Paylaş > Haritayı yerleştir ile güncelleyin -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3188.25!2d36.515!3d36.799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHassa%2C%20Hatay!5e0!3m2!1str!2str!4v1707123456789!5m2!1str!2str" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Hassa Belediyesi Konumu">
+                </iframe>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mayor / Info Section -->
+    <section id="baskan" class="section mayor-section">
+        <div class="container mayor-container">
+            <div class="mayor-images-wrapper">
+                <div class="mayor-image card-portrait">
+                    <img src="assets/img/baskan1.jpg" alt="Selahattin Çolak">
+                    <span class="img-caption">Belediye Başkanı SELAHATTİN ÇOLAK</span>
+                </div>
+            </div>
+            <div class="mayor-content">
+                <span class="subtitle">Hassa Belediye Başkanı</span>
+                <h2>SELAHATTİN ÇOLAK</h2>
+                <p>
+                    "Hassa'mızı daha yaşanabilir, daha güvenli ve daha güçlü bir ilçe yapmak için ekip arkadaşlarımızla birlikte aralıksız çalışıyoruz. Halkımızın desteği ve güveni en büyük gücümüzdür."
+                </p>
+                <div class="signatures">
+                    <a href="#baskan" class="btn btn-secondary">Başkanı Tanıyın</a>
+                    <a href="mailto:baskan@hassa.bel.tr" class="btn btn-outline">Başkan'a Mesaj</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yasal / KVKK & Çerez -->
+    <section id="yasal" class="section yasal-section">
+        <div class="container">
+            <h2>Yasal Metinler</h2>
+            <div id="kvkk" class="yasal-blok">
+                <h3>KVKK Aydınlatma Metni</h3>
+                <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, kişisel verileriniz Hassa Belediyesi tarafından hizmet sunumu ve yasal yükümlülükler çerçevesinde işlenebilmektedir. Detaylı aydınlatma metni için belediyemizle iletişime geçebilirsiniz.</p>
+            </div>
+            <div id="cerez-politikasi" class="yasal-blok">
+                <h3>Çerez Politikası</h3>
+                <p>Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanılmaktadır. Siteyi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.</p>
+            </div>
+            <div id="kullanim-kosullari" class="yasal-blok">
+                <h3>Kullanım Koşulları</h3>
+                <p>Bu site T.C. Hassa Belediyesi resmi web sitesidir. Sitedeki içerikler bilgilendirme amaçlıdır. İçerikler izin alınmaksızın kopyalanamaz veya ticari amaçla kullanılamaz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Hassa Belediyesi</h4>
+                    <p>Hassa Belediyesi resmi web sitesidir. Vatandaş odaklı hizmet anlayışıyla ilçemizi geliştirmek için çalışıyoruz. Tüm hakları saklıdır.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/hassabelediyesi" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="#anasayfa">Anasayfa</a></li>
+                        <li><a href="#kurumsal">Kurumsal</a></li>
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>E-Belediye</h4>
+                    <ul>
+                        <li><a href="#ebelediye">Borç Ödeme</a></li>
+                        <li><a href="#ebelediye">Beyan İşlemleri</a></li>
+                        <li><a href="#ebelediye">İmar Durumu</a></li>
+                        <li><a href="#nobetci-eczaneler">Nöbetçi Eczaneler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> <a href="https://maps.app.goo.gl/DgejYNT55e7nwsjk8" target="_blank" rel="noopener noreferrer">Derviş Paşa Mah. Atatürk Cad. Hassa/HATAY</a></li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:03267716366">0326 771 63 66</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:bilgi@hassa.bel.tr">bilgi@hassa.bel.tr</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 T.C. Hassa Belediyesi. Her Hakkı Saklıdır.</p>
+                <p class="footer-legal">
+                    <a href="#kvkk">KVKK Aydınlatma Metni</a> &middot; <a href="#cerez-politikasi">Çerez Politikası</a> &middot; <a href="#kullanim-kosullari">Kullanım Koşulları</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Görsel büyütme">
+        <div class="lightbox-content">
+            <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Kapat"><i class="fa-solid fa-times"></i></button>
+            <img src="" alt="" id="lightboxImg">
+            <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/905327716366" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="WhatsApp ile İletişim">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Yukarı Çık">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent-inner">
+            <p>Bu sitede deneyiminizi iyileştirmek için çerezler kullanıyoruz. Sitemizi kullanmaya devam ederek <a href="#cerez-politikasi">Çerez Politikamızı</a> kabul etmiş olursunuz.</p>
+            <button type="button" class="btn btn-primary" id="cookieAccept">Kabul Et</button>
+        </div>
+    </div>
+
+    <!-- Scripts (inline - tek dosyada her cihazda calisir) -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    /* Hero Slider */
+    var heroSlides = document.querySelectorAll('.hero-slide');
+    var heroDots = document.querySelectorAll('.hero-dots button[data-slide]');
+    var heroPrev = document.getElementById('heroPrev');
+    var heroNext = document.getElementById('heroNext');
+    var heroCurrent = 0;
+    var heroTotal = heroSlides.length;
+    var heroInterval;
+    function goToHeroSlide(index) {
+        heroCurrent = (index + heroTotal) % heroTotal;
+        heroSlides.forEach(function(s, i) { s.classList.toggle('active', i === heroCurrent); });
+        heroDots.forEach(function(d, i) {
+            d.classList.toggle('active', i === heroCurrent);
+            d.setAttribute('aria-selected', i === heroCurrent ? 'true' : 'false');
+        });
+    }
+    function heroNextSlide() { goToHeroSlide(heroCurrent + 1); }
+    function heroPrevSlide() { goToHeroSlide(heroCurrent - 1); }
+    function startHeroAuto() {
+        heroInterval = setInterval(heroNextSlide, 5000);
+    }
+    function stopHeroAuto() { clearInterval(heroInterval); }
+    if (heroPrev) heroPrev.addEventListener('click', function() { stopHeroAuto(); heroPrevSlide(); startHeroAuto(); });
+    if (heroNext) heroNext.addEventListener('click', function() { stopHeroAuto(); heroNextSlide(); startHeroAuto(); });
+    heroDots.forEach(function(btn, i) {
+        btn.addEventListener('click', function() { stopHeroAuto(); goToHeroSlide(i); startHeroAuto(); });
+    });
+    startHeroAuto();
+
+    /* Preloader - hide when page ready */
+    var preloader = document.getElementById('preloader');
+    if (preloader) {
+        function hidePreloader() {
+            preloader.classList.add('hidden');
+            setTimeout(function() { preloader.style.display = 'none'; }, 500);
+        }
+        if (document.readyState === 'complete') hidePreloader();
+        else window.addEventListener('load', hidePreloader);
+    }
+
+    /* Gallery Lightbox */
+    var galleryItems = document.querySelectorAll('.gallery-item');
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxClose = document.getElementById('lightboxClose');
+    var lightboxPrev = document.getElementById('lightboxPrev');
+    var lightboxNext = document.getElementById('lightboxNext');
+    var lightboxIndex = 0;
+    var lightboxSources = [];
+    galleryItems.forEach(function(item) {
+        var src = item.getAttribute('data-src');
+        var img = item.querySelector('img');
+        if (src) lightboxSources.push(src);
+        else if (img && img.src) lightboxSources.push(img.src);
+    });
+    function openLightbox(index) {
+        if (lightboxSources.length === 0) return;
+        lightboxIndex = (index + lightboxSources.length) % lightboxSources.length;
+        lightboxImg.src = lightboxSources[lightboxIndex];
+        lightboxImg.alt = 'Galeri görseli ' + (lightboxIndex + 1);
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    galleryItems.forEach(function(item, i) {
+        item.addEventListener('click', function() {
+            if (lightboxSources[i] !== undefined) openLightbox(i);
+        });
+        item.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (lightboxSources[i] !== undefined) openLightbox(i); }
+        });
+    });
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightbox) lightbox.addEventListener('click', function(e) { if (e.target === lightbox) closeLightbox(); });
+    if (lightboxPrev) lightboxPrev.addEventListener('click', function(e) { e.stopPropagation(); openLightbox(lightboxIndex - 1); });
+    if (lightboxNext) lightboxNext.addEventListener('click', function(e) { e.stopPropagation(); openLightbox(lightboxIndex + 1); });
+    document.addEventListener('keydown', function(e) {
+        if (!lightbox || !lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') openLightbox(lightboxIndex - 1);
+        if (e.key === 'ArrowRight') openLightbox(lightboxIndex + 1);
+    });
+
+    /* Cookie Consent */
+    var cookieConsent = document.getElementById('cookieConsent');
+    var cookieAccept = document.getElementById('cookieAccept');
+    if (cookieConsent && !localStorage.getItem('hassa_cookie_consent')) {
+        cookieConsent.classList.add('show');
+    }
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', function() {
+            localStorage.setItem('hassa_cookie_consent', 'accepted');
+            cookieConsent.classList.remove('show');
+        });
+    }
+
+    /* Hava Durumu (wttr.in) */
+    var weatherWidget = document.getElementById('weatherWidget');
+    if (weatherWidget) {
+        fetch('https://wttr.in/Hassa,Turkey?format=%c+%t')
+            .then(function(r) { return r.text(); })
+            .then(function(text) {
+                weatherWidget.innerHTML = '<i class="fa-solid fa-sun"></i> <span>Hassa: ' + text.trim() + '</span>';
+            })
+            .catch(function() {
+                weatherWidget.innerHTML = '<i class="fa-solid fa-location-dot"></i> <span>Hassa / Hatay</span>';
+            });
+    }
+
+    /* Contact Form */
+    var contactForm = document.getElementById('contactForm');
+    var contactFormFeedback = document.getElementById('contactFormFeedback');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('contactName').value.trim();
+            var email = document.getElementById('contactEmail').value.trim();
+            var subject = document.getElementById('contactSubject').value;
+            var message = document.getElementById('contactMessage').value.trim();
+            if (!name || !email || !subject || !message) {
+                contactFormFeedback.className = 'form-feedback error';
+                contactFormFeedback.textContent = 'Lütfen zorunlu alanları doldurun.';
+                return;
+            }
+            var subjectText = document.getElementById('contactSubject').options[document.getElementById('contactSubject').selectedIndex].text;
+            var mailto = 'mailto:bilgi@hassa.bel.tr?subject=' + encodeURIComponent('İletişim: ' + subjectText) + '&body=' + encodeURIComponent('Ad Soyad: ' + name + '\nE-posta: ' + email + '\n\nMesaj:\n' + message);
+            contactFormFeedback.className = 'form-feedback success';
+            contactFormFeedback.textContent = 'Teşekkürler. Mesajınız alındı. E-posta uygulamanız açılacaktır.';
+            window.location.href = mailto;
+        });
+    }
+
+    /* Çözüm Masası Form */
+    var cozumForm = document.getElementById('cozumForm');
+    var cozumFormFeedback = document.getElementById('cozumFormFeedback');
+    if (cozumForm) {
+        cozumForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('cozumName').value.trim();
+            var phone = document.getElementById('cozumPhone').value.trim();
+            var category = document.getElementById('cozumCategory').value;
+            var aciklama = document.getElementById('cozumAciklama').value.trim();
+            if (!name || !phone || !category || !aciklama) {
+                cozumFormFeedback.className = 'form-feedback error';
+                cozumFormFeedback.textContent = 'Lütfen zorunlu alanları doldurun.';
+                return;
+            }
+            var categoryText = document.getElementById('cozumCategory').options[document.getElementById('cozumCategory').selectedIndex].text;
+            var body = 'Ad Soyad: ' + name + '\nTelefon: ' + phone + '\nAdres: ' + (document.getElementById('cozumAddress').value || '-') + '\nKategori: ' + categoryText + '\n\nAçıklama:\n' + aciklama;
+            var mailto = 'mailto:bilgi@hassa.bel.tr?subject=' + encodeURIComponent('Çözüm Masası: ' + categoryText) + '&body=' + encodeURIComponent(body);
+            cozumFormFeedback.className = 'form-feedback success';
+            cozumFormFeedback.textContent = 'Teşekkürler. Talebiniz alındı. E-posta uygulamanız açılacaktır. Dosya eklemek isterseniz e-postaya ekleyebilirsiniz.';
+            window.location.href = mailto;
+        });
+    }
+
+    /* Duyurular / İhale Tabs */
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var tab = this.getAttribute('data-tab');
+            document.querySelectorAll('.tab-btn').forEach(function(b) {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+            document.querySelectorAll('.tab-pane').forEach(function(pane) {
+                var isActive = pane.id === 'pane-' + tab;
+                pane.classList.toggle('active', isActive);
+                pane.hidden = !isActive;
+            });
+        });
+    });
+
+    var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    var closeSidebarBtn = document.getElementById('closeSidebar');
+    var mobileSidebar = document.getElementById('mobileSidebar');
+    var mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    function openMenu() {
+        mobileSidebar.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+        mobileSidebar.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
+    if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeMenu);
+    if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMenu);
+
+    var mobileAccordionToggle = document.getElementById('toggleKurumsal');
+    var mobileAccordion = document.querySelector('.mobile-accordion');
+    if (mobileAccordionToggle && mobileAccordion) {
+        mobileAccordionToggle.addEventListener('click', function() {
+            var open = mobileAccordion.classList.toggle('open');
+            mobileAccordionToggle.setAttribute('aria-expanded', open);
+        });
+    }
+
+    var header = document.querySelector('.main-header');
+    window.addEventListener('scroll', function() {
+        header.style.boxShadow = window.scrollY > 50 ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+    });
+    var backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        backToTopBtn.classList.toggle('show', window.scrollY > 300);
+    });
+    if (backToTopBtn) backToTopBtn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            if (entry.target.classList.contains('stats-section')) {
+                var counters = entry.target.querySelectorAll('.stat-number');
+                counters.forEach(function(counter) {
+                    if (counter.classList.contains('animated')) return;
+                    counter.classList.add('animated');
+                    var target = parseInt(counter.getAttribute('data-target'), 10);
+                    var duration = 2000, start = 0, step = target / (duration / 16);
+                    function tick() {
+                        start += step;
+                        counter.textContent = start < target ? Math.floor(start) : target;
+                        if (start < target) requestAnimationFrame(tick);
+                    }
+                    tick();
+                });
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.section').forEach(function(s) { s.classList.add('fade-in'); observer.observe(s); });
+    document.querySelectorAll('.stat-card').forEach(function(c) { c.classList.add('fade-in'); observer.observe(c); });
+    document.querySelectorAll('.project-card').forEach(function(c) { c.classList.add('fade-in'); observer.observe(c); });
+    document.querySelectorAll('.quick-access .access-card').forEach(function(c) { c.classList.add('fade-in'); observer.observe(c); });
+    document.querySelectorAll('.news-grid .news-card').forEach(function(c) { c.classList.add('fade-in'); observer.observe(c); });
+});
+    </script>
+</body>
+
+</html>
