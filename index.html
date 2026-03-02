@@ -2906,12 +2906,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     startHeroAuto();
 
-    /* Preloader - hide when page ready */
+    /* Preloader - en az 6 saniye göster, dikkat çeksin */
     var preloader = document.getElementById('preloader');
     if (preloader) {
+        var preloaderMinTime = 6000;
+        var preloaderStart = Date.now();
         function hidePreloader() {
-            preloader.classList.add('hidden');
-            setTimeout(function() { preloader.style.display = 'none'; }, 500);
+            var elapsed = Date.now() - preloaderStart;
+            var wait = Math.max(0, preloaderMinTime - elapsed);
+            setTimeout(function() {
+                preloader.classList.add('hidden');
+                setTimeout(function() { preloader.style.display = 'none'; }, 500);
+            }, wait);
         }
         if (document.readyState === 'complete') hidePreloader();
         else window.addEventListener('load', hidePreloader);
