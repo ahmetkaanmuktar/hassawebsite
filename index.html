@@ -1939,8 +1939,9 @@ button:focus-visible {
 .preloader-logo {
     height: 80px;
     width: auto;
-    margin-bottom: 20px;
-    animation: preloaderPulse 1.2s ease-in-out infinite;
+    margin: 0 auto 20px;
+    display: block;
+    animation: preloaderLogoSpin 2s linear infinite;
 }
 
 .preloader-spinner {
@@ -1951,6 +1952,11 @@ button:focus-visible {
     border-radius: 50%;
     margin: 0 auto 16px;
     animation: preloaderSpin 0.8s linear infinite;
+}
+
+@keyframes preloaderLogoSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .preloader-text {
